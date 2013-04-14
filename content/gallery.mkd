@@ -1,0 +1,6 @@
+title: Galleries
+slug: galleries
+type: gallery-index
+tags: [_nav]
+nav_sort: 2
+---

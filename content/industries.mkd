@@ -1,0 +1,38 @@
+title: Industries Served
+slug: industries
+tags: [_nav]
+nav_sort: 4
+---
+#Industries Served#
+
+<div class=threecol> 
+Agriculture </br>
+Aquaculture </br>
+Architecture</br>
+Art </br>
+Cabinetry </br>
+Construction </br>
+Countertops </br>
+Design </br>
+Film </br>
+</div><div class=threecol>
+Fishing </br>
+Flashing </br>
+Food Processing </br>
+Forestry </br>
+Foundries </br>
+Furniture </br>
+Grain Elevators </br>
+Hospital Equipment </br>
+Heavy Equipment </br>
+</div><div class=threecol>
+Mining </br>
+Ornamental </br>
+Prototype & Display </br>
+Pulp Mills </br>
+Railings </br>
+Railroads </br>
+Roof caps </br>
+Saw Mills </br>
+Woodwork </br>
+</div>

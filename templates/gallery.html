@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{%- block content %}
+
+<h2> {{ page.title }} </h2>
+
+<div id="galleria"></div>
+
+{%- endblock %}
+
+{%- block sidebar -%}
+<h2> Other Galleries </h2>
+{%- for gallery in site.tags['_gal']|sort(attribute='gal_sort') %}
+    {%- if gallery.url != page.url -%}
+        <div class = "gallery-link">
+            <a title="" href="/{{ gallery.url }}"><img src = "{{gallery.gal_primary}}" title=""></img></a>
+            <label><a title="" href="/{{ gallery.url }}"> {{ gallery.title }} </a></label>
+        </div>
+    {%- endif -%}
+{%- endfor -%}
+
+{%- endblock -%}
+
+{%- block scripts %}
+<script>
+
+var data = {{ page.gal_data }};
+Galleria.loadTheme('/js/galleria/themes/classic/galleria.classic.min.js');
+Galleria.run('#galleria', {
+    dataSource: data
+});
+</script>
+{%- endblock %}

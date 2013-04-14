@@ -1,0 +1,25 @@
+title: Lampshades Gallery
+slug: lampshades
+category: gallery
+type: gallery
+tags: [_gal]
+gal_sort: 3
+gal_primary: '/gallery/lampshades/shade1.jpg'
+gal_data:
+  - 
+    image: '/gallery/lampshades/shade1.jpg'
+    title: 'Lamp Shade'
+    description: 'Made from expanded galvanized.'
+  - 
+    image: '/gallery/lampshades/shade2.jpg'
+    title: 'Lamp Shade'
+    description: 'Main Sheet made the fixtures.'
+  - 
+    image: '/gallery/lampshades/barlight.jpg'
+    title: 'Bar Light'
+    description: 'Exterior shop photo.'
+  - 
+    image: '/gallery/lampshades/sconce.jpg'
+    title: 'Sconce'
+    description: 'Delightful sheet metal construction.'
+---

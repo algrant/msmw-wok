@@ -1,0 +1,23 @@
+title: Premises Gallery
+slug: premises
+category: gallery
+type: gallery
+tags: [_gal]
+gal_sort: 1
+gal_primary: '/gallery/premises/MSMW_front_600.jpg'
+gal_data:
+  - 
+    image: '/gallery/premises/MSMW_front_600.jpg'
+    title: 'The Shop - Front View'
+    description: 'Exterior shop photo.'
+  - 
+    image: '/gallery/premises/coverpage_600.jpg'
+    title: 'The Shop - In the sun!'
+    description: 'Exterior shop photo.'
+  - 
+    image: '/gallery/premises/msmw_front_flickr_600.jpg'
+    title: 'The Shop - Such a delight'
+    description: 'Exterior shop photo.'
+---
+
+

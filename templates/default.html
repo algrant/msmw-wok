@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{%- block content %}
+
+  {%- if page.img %}
+  	<img id="title-img-right" src="{{ page.img }}" alt="{{ page.img_alt }}">
+	<div id="page-content">
+		{{ page.content }}
+	</div>
+  	<img id="title-img-bottom" src="{{ page.img }} " alt="{{ page.img_alt }}" >
+  {%- else -%}
+	<div id="page-content">
+	  {{ page.content }}
+	</div>
+  {%- endif -%}
+
+{%- endblock %}
+
+{%- block sidebar -%}
+<h3>Gallery</h3>
+<div class = "gallery-link">
+    <a title="" href="/gallery/countertops"><img src = "/gallery/countertops/counter1.JPG" title="Countertops" alt="Link to counter top gallery"></a>
+    <label><a title="Countertops" href="/gallery/countertops"> Countertops </a></label>
+</div>
+<h3>External Links</h3>
+<ul class="otherlinks clearfix">
+    <li><a href="http://smacna-bc.org/" rel="external">SMACNA, BC</a></li>
+    <li><a href="http://www.smw280.org/" rel="external">Sheet Metal Workers, Local 280</a></li>
+    <li><a href="http://www.smwtcs.ca/" rel="external">Sheet Metal Training Centre</a></li>
+</ul>
+
+{%- endblock -%}
+
+
+{%- block scripts %}
+{%- endblock %}

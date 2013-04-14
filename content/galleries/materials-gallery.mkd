@@ -1,0 +1,26 @@
+title: Materials Gallery
+slug: materials-gallery
+category: gallery
+type: gallery
+tags: [_gal]
+gal_sort: 4
+gal_primary: '/gallery/materials/CORRUGATED.JPG'
+gal_data:
+  - 
+    image: '/gallery/materials/CORRUGATED.JPG'
+    title: 'Corrugated Material'
+    description: ''
+  -
+    image: '/gallery/materials/coppergutter1.jpg'
+    title: 'Copper Gutter - View 1'
+    description: ''
+  -
+    image: '/gallery/materials/coppergutter2.jpg'
+    title: 'Copper Gutter - View 2'
+    description: ''
+  -
+    image: '/gallery/materials/randomswirls_med.png'
+    title: 'Random Swirls'
+    description: ''
+---
+ 

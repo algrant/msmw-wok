@@ -1,0 +1,20 @@
+title: Home
+url: "/index.html"
+tags: [_nav]
+nav_sort: 1
+img: "/images/home-msmw-shop-front.jpg"
+img_alt: "Photo of the shop."
+---
+
+# Welcome to Main Sheet Metal Works Ltd. #
+
+Main Sheet Metal Works Ltd. is a custom sheet metal fabrication shop located in downtown Vancouver, B.C. 
+
+Materials include all ferrous and non-ferrous metals. 
+
+We can build, modify, repair or customize anything you'd like.
+
+Main Sheet Metal Works Ltd. was founded in 1922, and has operated continuously ever since
+
+Please browse this site for more details!
+

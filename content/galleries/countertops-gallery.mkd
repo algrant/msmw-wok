@@ -1,0 +1,47 @@
+title: Countertops Gallery
+slug: countertops
+category: gallery
+type: gallery
+tags: [_gal]
+gal_sort: 2
+gal_primary: '/gallery/countertops/counter1.JPG'
+gal_data:
+  - 
+    image: '/gallery/countertops/counter1.JPG'
+    title: 'Kitchen Counter with Sink - view 1'
+    description: 'Hand made stainless steel counters.'
+  - 
+    image: '/gallery/countertops/counter2.JPG'
+    title: 'Kitchen Counter with Sink - view 2'
+    description: 'Hand made stainless steel counters'
+  - 
+    image: '/gallery/countertops/counter3.JPG'
+    title: 'Kitchen Counter with Sink - view 3'
+    description: 'Hand made stainless steel counters.'
+  - 
+    image: '/gallery/countertops/counter4.JPG'
+    title: 'Kitchen Counter with Sink - view 4'
+    description: 'Hand made stainless steel counters.'
+  - 
+    image: '/gallery/countertops/pdfcounter1.jpg'
+    title: 'Kitchen Counter, Double Sink'
+    description: 'Hand made stainless steel counters.'
+  - 
+    image: '/gallery/countertops/pdfcounter2.jpg'
+    title: 'Kitchen Counter, Range Hood and Backsplash - view 1'
+    description: 'Hand made stainless steel counters.'
+  - 
+    image: '/gallery/countertops/pdfcounter4.jpg'
+    title: 'Kitchen Counter, Range Hood and Backsplash - view 2'
+    description: 'Hand made stainless steel counters.'
+  - 
+    image: '/gallery/countertops/pdfcounter3.jpg'
+    title: 'Kitchen Counter, Double Sink'
+    description: 'Hand made stainless steel counters.'
+  - 
+    image: '/gallery/countertops/pdfcounter5.jpg'
+    title: 'Kitchen Counter, Island'
+    description: 'Hand made stainless steel counters.'
+---
+
+

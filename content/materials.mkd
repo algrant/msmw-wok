@@ -1,0 +1,51 @@
+title: Materials
+tags: [_nav]
+nav_sort: 3
+---
+#Materials and Formats#
+
+(This is what we generally have available, if it's not listed just call or <a href="mailto:main@mainsheetmetal.com">email</a> and ask!)
+
+<div class=threecol>
+<h2> Material </h2>
+Aluminum </br>
+Copper </br>
+Brass </br>
+Stainless Steel </br>
+Lead </br>
+Steel - Cold rolled </br>
+Steel - Hot rolled </br>
+Steel - Galvanized </br>
+Steel - Satin coat </br>
+Zinc </br>
+</div>
+<div class=threecol>
+<h2> Format </h2>
+Angle </br>
+Channel </br>
+Checker Plate </br>
+Corrugated Sheet </br>
+Duct </br>
+Expanded metal </br>
+Flat bar </br>
+Mesh </br>
+<a title="Perf Patterns PDF" href="/other/Perforated Patterns.pdf" rel="external"> Perforated metal (click for styles) </a></br>
+Pipe </br>
+Plate </br>
+</div>
+<div class=threecol>
+<h2> Format </h2>
+Sheet </br>
+Shim Stock  </br>
+Round bar  </br>
+Square bar  </br>
+Safety grating  </br>
+Tee Bar  </br>
+Tread Plate  </br>
+Tube - Elbow  </br>
+Tube - Square  </br>
+Tube - Round  </br>
+Tube - Rectangular  </br>
+</div>
+<p class=clearfix></p>
+**Architectural & Industrial, fabrication, shearing, welding, rolling, forming & repairs.**

@@ -1,0 +1,66 @@
+title: Contact
+tags: [_nav]
+nav_sort: 5
+---
+#Contact#
+Email: <a title="Mail Us" href="mailto:main@mainsheetmetal.com">main@mainsheetmetal.com </a><br>
+Phone: <a title="Phone Us" href="tel://604-681-6649"> 604-681-6649 </a><br>
+Fax: 604-681-0116</p>
+
+
+<div class="left-align">
+Contact us by email any time, and we'll get back to you within a few business days.  Phone only during shop hours, we have no answering machine.<br>
+</div><br>
+
+
+#Location
+1024 Main St., Vancouver BC, V6A 2W1
+
+<div class="left-align">
+<p> Our front door is located on Main St. between Campagnolo's and the Ivanhoe.  There is street parking in the back (on Station St.), as well as an entrance for pick ups and delivery. </p>
+</div>
+
+<div id="map-canvas" ></div>
+
+##Hours##
+<div id="hours" class="left-align">
+<p> Monday: 7:30am - 3:30pm </p>
+<p> Tuesday: 7:30am - 3:30pm </p>
+<p> Wednesday: 7:30am - 3:30pm </p>
+<p> Thursday: 7:30am - 3:30pm </p>
+<p> Friday: 7:30am - 3:30pm </p>
+<p> Saturday: Closed </p>
+<p> Sunday: Closed </p>
+</div>
+
+<div id="holidays">
+</div>
+
+<script type="text/javascript">
+
+</script>
+
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAI67ebnfKIpFgH-CM4LFLlEsOxm3dzOI0&sensor=true"></script>
+<script type="text/javascript">
+      function initialize() {
+        var mapOptions = {
+          center: new google.maps.LatLng(49.275265,-123.099747),
+          zoom: 15,
+          mapTypeId: google.maps.MapTypeId.ROADMAP,
+          streetViewControl: false
+        };
+        var map = new google.maps.Map(document.getElementById("map-canvas"),
+            mapOptions);
+		var marker=new google.maps.Marker({
+		  position:new google.maps.LatLng(49.275265,-123.099747),
+		  title:"Main Sheet Metal Works Ltd."
+		  });
+
+		marker.setMap(map);
+		// var infowindow = new google.maps.InfoWindow({
+		//	 content:'Main Sheet Metal Works Ltd.'
+		// });
+		// infowindow.open(map, marker);
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+</script>

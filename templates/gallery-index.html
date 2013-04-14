@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{%- block content %}
+
+{%- for gallery in site.tags['_gal']|sort(attribute='gal_sort') %}
+    <div class = "gallery-link">
+        <a title="" href="/{{ gallery.url }}"><img src = "{{gallery.gal_primary}}" title=""></img></a>
+        <label><a title="" href="/{{ gallery.url }}"> {{ gallery.title }} </a></label>
+    </div>
+{%- endfor -%}
+
+{%- endblock %}
+
+{%- block sidebar -%}
+<h3>Links</h3>
+<ul class="otherlinks clearfix">
+    <li><a href="http://smacna-bc.org/" rel="external">Smacna, BC</a></li>
+    <li><a href="http://www.smw280.org/" rel="external">Sheet Metal Workers, Local 280</a></li>
+    <li><a href="http://www.smwtcs.ca/" rel="external">Sheet Metal Training Centre</a></li>
+</ul>
+
+{%- endblock -%}
+
+{%- block scripts %}
+{%- endblock %}
