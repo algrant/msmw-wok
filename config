@@ -1,0 +1,4 @@
+site_title: Main Sheet Metal Works Ltd.
+url_include_index: no
+url_pattern: "/{category}/{slug}/{page}/index.html"
+relative_urls: true
