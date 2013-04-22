@@ -141,7 +141,7 @@ a:hover { color: #222; }
 				.container #headercont #headerright #fixedwidth-headerright
 					{
 						float:right;
-						width:245px;
+						width:255px;
 						text-align:left;
 					}
 	/** Menu **/
