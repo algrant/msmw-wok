@@ -1,0 +1,13 @@
+title: Testimonials
+tags: [_nav]
+nav_sort: 4
+---
+#Clients and Testimonials#
+
+<img title="Wall of Fame" src="/images/wall-of-fame.jpg" alt="Wall of Fame"></img>
+
+Main Sheet Metal Works Ltd. - Wall of Fame
+(This is snapshot of the current Wall of Fame at the shop, which shows some of the latest projects we've been working on)
+
+> "…whatever concoction you can think up that has to do with metal, I am sure they (Main Sheet Metal Works) will be able to help you out!"
+> - Shain R. commented in <a href="http://www.yelp.ca/biz/main-sheet-metal-works-vancouver" title="Yelp Comments">Yelp</a>

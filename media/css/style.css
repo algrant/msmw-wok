@@ -31,7 +31,7 @@ body
 ::selection { background: #000; color: #FFF; }
 ::-moz-selection { background: #000; color: #FFF; }
 
-a { color: #039; text-decoration: none; -webkit-transition: all 0.2s linear; -moz-transition: all 0.2s linear; -o-transition: all 0.2s linear; transition: all 0.2s linear; }
+a { color: #243A74; text-decoration: none; -webkit-transition: all 0.2s linear; -moz-transition: all 0.2s linear; -o-transition: all 0.2s linear; transition: all 0.2s linear; }
 a:hover { color: #222; }
 
 /** Galleria **/
@@ -52,11 +52,16 @@ a:hover { color: #222; }
 	
 	.lightbluebg
 	{
-		background: #039;
+		background: #243A74;
 		/*light blue #0CF - dark blue #091457*/
 		/* other blue 00B2E0*/
 	}
 	
+	.whitebg
+	{
+		background:#fff;
+	}
+
 	/** Header **/
 
 	.container #headercont
@@ -71,7 +76,7 @@ a:hover { color: #222; }
 		.container #headercont #headerlogo
 		{
 			float: left;
-			width: 50%;
+			width: 60%;
 			text-align: left;
 		}
 		
@@ -83,8 +88,8 @@ a:hover { color: #222; }
 			}
 				.container #headercont #headerlogo h1 img
 				{
-					width:120%;
-					max-height:100px;
+
+					width:100%;
 
 				}
 				.container #headercont #headerlogo h1 a
@@ -97,15 +102,14 @@ a:hover { color: #222; }
 				
 				.container #headercont #headerlogo h1 a:hover
 				{
-					color: #039;
+					color: #243A74;
 				}
 				
 		.container #headercont #headerright
 		{
 			float: left;
-			width: 50%;
-			min-width:280px;
-			padding: 0px 0 0 0;
+			width: 40%;
+			padding: 0px;
 			text-align: right;
 		}
 		
@@ -114,14 +118,14 @@ a:hover { color: #222; }
 				font-weight: 400;
 				font-size: 14px;
 				color: #FFF;
-				margin: 0 0 0px 0;
+				margin: 0px;
 				letter-spacing: -0.8px;
 				font-family: "Orienta", Arial, Helvetica, sans-serif;
 			}
 			
 				.container #headercont #headerright p span
 				{
-					color: #CCC;
+					color: #243A74;
 				}
 				
 				.container #headercont #headerright p.quote
@@ -133,20 +137,20 @@ a:hover { color: #222; }
 				{
 					font-weight: 400;
 					font-size: 14px;
-					color: #FFF;
-					margin: 0 0 0px 0;
+					color: #222;
+					margin: 0px;
 					letter-spacing: -0.8px;
 					font-family: "Orienta", Arial, Helvetica, sans-serif;
 				}
 					.container #headercont #headerright p a:hover
 					{
 						font-weight: 500;
-						color: #039;
+						color: #243A74;
 					}
 				.container #headercont #headerright #fixedwidth-headerright
 					{
 						float:right;
-						width:300px;
+						width:240px;
 						text-align:left;
 					}
 	/** Menu **/
@@ -238,7 +242,7 @@ a:hover { color: #222; }
 		.container #maincont ol { margin: 0 0 15px 35px; list-style-type: decimal; }
 		.container #maincont ol li { padding: 0 0 0 2px; }
 		.container #maincont hr { clear: both; border: 0; height: 0; margin: 0 0 20px 0; border-top: 1px dashed #CCC; }
-		.container #maincont blockquote {text-align:left; color:#FFF; background: #666; border-left: 3px solid #039; padding: 15px; margin: 0 0 15px 0; }
+		.container #maincont blockquote {text-align:left; color:#FFF; background: #666; border-left: 3px solid #243A74; padding: 15px; margin: 0 0 15px 0; }
 		.container #maincont img {width:100%; max-width:500px;}
 			.container #maincont #mainleft
 			{
@@ -477,7 +481,7 @@ a:hover { color: #222; }
 		        font-size:1.1em;
 		        margin:0;
 		        color:#FFF;
-		        background-color:#039;
+		        background-color:#243A74;
 		    }
 
 		    .container  #menucont label:after {
@@ -486,7 +490,7 @@ a:hover { color: #222; }
 			    top: 7px; 
 			    content:"\2261";
 			    font-size:18px;
-			    background-color:#039;
+			    background-color:#243A74;
 		    }
 		    
 		    .container #menucont  input[type=checkbox]:checked ~ label:after {
