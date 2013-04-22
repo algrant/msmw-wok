@@ -23,7 +23,7 @@ body
 {
 	font-family: "Open Sans", Arial, Verdana, Helvetica, sans-serif;
 	font-size: 14px;
-	color: #555;
+	color: #000;
 	padding: 0 0 20px 0;
 	background: #FFF url("../images/bg.png") repeat;
 }
@@ -68,7 +68,7 @@ a:hover { color: #222; }
 	{
 		width: 90%;
 		max-width: 980px;
-		padding: 25px 0;
+		padding: 20px 0;
 		margin: 0 auto;
 		/*text-shadow: 1px 1px 1px #000;*/
 	}
@@ -80,31 +80,22 @@ a:hover { color: #222; }
 			text-align: left;
 		}
 		
-			.container #headercont #headerlogo h1
+			.container #headercont #headerlogo #headerlogo-img
 			{
-				font-size: 26px;
-				font-weight: 400;
-				padding-top: 7px;
+				width:605px;
 			}
-				.container #headercont #headerlogo h1 img
-				{
-
-					width:100%;
-
-				}
-				.container #headercont #headerlogo h1 a
-				{
-					font-family: "Orienta", Arial, Helvetica, sans-serif;
-					color: #FFF;
-					font-size: 35px;
-					letter-spacing: -2px;
-				}
-				
-				.container #headercont #headerlogo h1 a:hover
-				{
-					color: #243A74;
-				}
-				
+			.container #headercont #headerlogo #headerlogo-img #logo1
+					{
+						width:16.98115%;
+					}
+			.container #headercont #headerlogo #headerlogo-img #logo2
+					{
+						width:66.0377%;
+					}
+			.container #headercont #headerlogo #headerlogo-img #logo3
+					{
+						width:16.98115%;
+					}				
 		.container #headercont #headerright
 		{
 			float: left;
@@ -125,7 +116,7 @@ a:hover { color: #222; }
 			
 				.container #headercont #headerright p span
 				{
-					color: #243A74;
+					color: #000;
 				}
 				
 				.container #headercont #headerright p.quote
@@ -150,7 +141,7 @@ a:hover { color: #222; }
 				.container #headercont #headerright #fixedwidth-headerright
 					{
 						float:right;
-						width:240px;
+						width:245px;
 						text-align:left;
 					}
 	/** Menu **/
@@ -213,6 +204,7 @@ a:hover { color: #222; }
 					letter-spacing: -0.3px;
 					font-family: "Orienta", Arial, Helvetica, sans-serif;
 				}
+
 				
 					.container #menucont ul li a:hover, .container #menucont ul li.active a
 					{
@@ -298,6 +290,17 @@ a:hover { color: #222; }
 					color: #FFF;
 					text-transform:uppercase;
 				}					
+			.container #maincont #hours-table
+			{
+				padding:5px;
+				margin-left:auto;
+				margin-right:auto;
+			}
+			.container #maincont #hours-table td
+			{
+				padding:5px;
+				text-align:left;
+			}
 			.container #maincont #mainright
 			{
 				float: left;
@@ -305,26 +308,26 @@ a:hover { color: #222; }
 				padding: 20px 0 0 2%;
 			}
 			
-				.container #maincont #mainright ul.otherlinks
+				.container #maincont #mainleft ul.otherlinks
 				{
 					margin: 0 0 15px 0;
 					padding: 0;
 					border-top: 1px dashed #CCC;
 				}
 				
-					.container #maincont #mainright ul.otherlinks li
+					.container #maincont #mainleft ul.otherlinks li
 					{
 						list-style-type: none;
 					}
 					
-						.container #maincont #mainright ul.otherlinks li a
+						.container #maincont #mainleft ul.otherlinks li a
 						{
 							float: left;
 							width: 100%;
 							padding: 5px 0;
 							border-bottom: 1px dashed #CCC;
 						}
-			
+
 				.container #maincont #mainright .sidesection
 				{
 					margin: 0 0 15px 0;
@@ -353,6 +356,11 @@ a:hover { color: #222; }
 						line-height: 14px;
 						font-size: 12px;
 					}
+
+				.container #maincont #mainright h3
+				{
+					text-align:center;
+				}
 
 				.container #maincont #mainright a.hoverlink
 				{
@@ -392,10 +400,11 @@ a:hover { color: #222; }
 								}
 				.container #maincont #mainright .gallery-link
 				{
-					margin: 0 0 15px 0;
+					margin: 0 auto 15px auto;
 					background: #666;
 					text-align:center;
 					color:#FFF;
+					width:150px;
 				}	
 					.container #maincont #mainright .gallery-link a
 					{ 
@@ -423,7 +432,10 @@ a:hover { color: #222; }
 	{
 		text-align: left;
 	}
-
+	.center-align
+	{
+		text-align: center;
+	}
 	#map-canvas
 	{
 		width: 100%;
@@ -435,20 +447,51 @@ a:hover { color: #222; }
 
 /** Responsive Magic **/
 
-@media screen and (max-width: 690px)
+@media screen and (max-width: 964px)
+{
+	.container #headercont #headerlogo #headerlogo-img #logo1
+			{
+				display:none;
+			}
+	.container #headercont #headerlogo #headerlogo-img #logo3
+			{
+				display:none;
+			}
+}
+
+@media screen and (max-width: 735px)
 {
 	.container
 	{
 		
 	}
-	
-		.container #headercont #headerlogo, .container #headercont #headerright
+		.container #headercont #headerlogo #headerlogo-img #logo1
+				{
+					display:inline-block;
+					width:16.98115%;
+				}
+		.container #headercont #headerlogo #headerlogo-img #logo2
+				{
+					width:66.0377%;
+				}
+		.container #headercont #headerlogo #headerlogo-img #logo3
+				{
+					display:inline-block;
+					width:16.98115%;
+				}
+		.container #headercont #headerlogo, .container #headercont #headerright, .container #headercont #headerlogo
 		{
 			float: none;
 			width: 100%;
 			text-align: center;
 		}
-		
+		.container #headercont #headerlogo #headerlogo-img
+			{
+				width:100%;
+				max-width:530px;
+				margin-right:auto;
+				margin-left:auto;
+			}	
 			.container #headercont #headerlogo h1 a img
 			{
 				width: 220px;
@@ -476,14 +519,14 @@ a:hover { color: #222; }
 		        position:relative;
 		        display:block;
 		        width:100%;
-		        min-height:2.25em;
-		        padding:.45em;
-		        font-size:1.1em;
+		        padding:.45em 0;
 		        margin:0;
 		        color:#FFF;
 		        background-color:#243A74;
 		    }
-
+		   .container  #menucont label span{
+				padding-left:10px;
+		    }
 		    .container  #menucont label:after {
 			    position: absolute;
 			    right: 20px;  
@@ -494,11 +537,12 @@ a:hover { color: #222; }
 		    }
 		    
 		    .container #menucont  input[type=checkbox]:checked ~ label:after {
+		      content:"x";
+		      text-transform:none;
 		      color:#666;
 		      background-color:#000;
 		    }
 		    .container #menucont  input[type=checkbox]:checked ~ label {
-		      content:"Hide Menu";
 		      color:#666;
 		      background-color:#000;
 		    }
@@ -513,22 +557,21 @@ a:hover { color: #222; }
 				.container #menucont ul li
 				{
 					width:100%;
+
 				}
 				
 					.container #menucont ul li a
 					{
 						width:100%;
-						line-height: 40px;
-						padding: 0 13px;
-						font-weight: 400;
-						font-size: 14px;
-						text-decoration: none;
-						color: #888;
-						text-transform: uppercase;
-						letter-spacing: -0.3px;
-						font-family: "Orienta", Arial, Helvetica, sans-serif;
+						padding:0;
+
 					}
 					
+					.container #menucont ul li a span
+					{
+						padding-left:10px;
+					}
+
 						.container #menucont ul li a:hover, .container #menucont ul li.active a
 						{
 							color: #FFF;
@@ -571,7 +614,25 @@ a:hover { color: #222; }
 		.container #maincont #mainleft .gallery-link
 			{
 				width:100%;
+				background:none;
 			}	
+			.container #maincont #mainleft	.gallery-link img
+			{
+				display:block;
+				float:top;
+				max-width:200px;
+				margin-left:auto;
+				margin-right:auto;
+			}
+			.container #maincont #mainleft	.gallery-link a
+			{
+				display:block;
+				float:top;
+				max-width:200px;
+				background: #666;
+				margin-left:auto;
+				margin-right:auto;
+			}
 		.container #maincont #mainright .sidecont
 		{
 			padding: 20px 0 10px 0;

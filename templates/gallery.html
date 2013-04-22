@@ -2,14 +2,16 @@
 
 {%- block content %}
 
-<h2> {{ page.title }} </h2>
+<h2> {{ page.title }} Gallery </h2>
 
 <div id="galleria"></div>
 
 {%- endblock %}
 
 {%- block sidebar -%}
-<h2> Other Galleries </h2>
+
+<h3> <a title="Galleries" href="/galleries" > Galleries </a> </h3>
+
 {%- for gallery in site.tags['_gal']|sort(attribute='gal_sort') %}
     {%- if gallery.url != page.url -%}
         <div class = "gallery-link">

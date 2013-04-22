@@ -1,5 +1,5 @@
 title: Galleries
-slug: galleries
+slug: gallery
 type: gallery-index
 tags: [_nav]
 nav_sort: 2

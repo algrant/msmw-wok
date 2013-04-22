@@ -1,10 +1,10 @@
-title: Countertops Gallery
+title: Countertops
 slug: countertops
 category: gallery
 type: gallery
 tags: [_gal]
 gal_sort: 2
-gal_primary: '/gallery/countertops/counter1.jpg'
+gal_primary: '/gallery/countertops/counter-thumb.jpg'
 gal_data:
   - 
     image: '/gallery/countertops/counter1.jpg'

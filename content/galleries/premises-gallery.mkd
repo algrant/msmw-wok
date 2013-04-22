@@ -1,10 +1,10 @@
-title: Premises Gallery
+title: Premises
 slug: premises
 category: gallery
 type: gallery
 tags: [_gal]
 gal_sort: 1
-gal_primary: '/gallery/premises/MSMW_front_600.jpg'
+gal_primary: '/gallery/premises/premises-thumb.jpg'
 gal_data:
   - 
     image: '/gallery/premises/MSMW_front_600.jpg'

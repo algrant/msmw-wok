@@ -1,10 +1,10 @@
-title: Lampshades Gallery
+title: Lampshades
 slug: lampshades
 category: gallery
 type: gallery
 tags: [_gal]
 gal_sort: 3
-gal_primary: '/gallery/lampshades/shade1.jpg'
+gal_primary: '/gallery/lampshades/lamp-thumb.jpg'
 gal_data:
   - 
     image: '/gallery/lampshades/shade1.jpg'

@@ -1,10 +1,10 @@
-title: Materials Gallery
-slug: materials-gallery
+title: Materials
+slug: materials
 category: gallery
 type: gallery
 tags: [_gal]
 gal_sort: 4
-gal_primary: '/gallery/materials/CORRUGATED.JPG'
+gal_primary: '/gallery/materials/material-thumb.jpg'
 gal_data:
   - 
     image: '/gallery/materials/CORRUGATED.JPG'
