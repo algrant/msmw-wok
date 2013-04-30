@@ -1,0 +1,50 @@
+title: Perforated Patterns
+slug: perfpatterns
+category: gallery
+type: gallery
+tags: [_gal]
+gal_sort: 5
+gal_primary: '/gallery/perfpatterns/perf-thumb.png'
+gal_data:
+  - 
+    image: '/gallery/perfpatterns/1-16_1-8_StagCentres.png'
+    title: 'Round Perforated'
+    description: '1/16" Round, 1/8" Staggered Centres.'
+  - 
+    image: '/gallery/perfpatterns/1-8_3-16_StagCentres.png'
+    title: 'Round Perforated'
+    description: '1/8" Round, 3/16" Staggered Centres.'
+  - 
+    image: '/gallery/perfpatterns/3-16_1-4_StagCentres.png'
+    title: 'Round Perforated'
+    description: '3/16" Round, 1/4" Staggered Centres.'
+  - 
+    image: '/gallery/perfpatterns/1-4_3-8_StagCentres.png'
+    title: 'Round Perforated'
+    description: '1/4" Round, 3/8" Staggered Centres.'
+  - 
+    image: '/gallery/perfpatterns/3-8_1-2_StagCentres.png'
+    title: 'Round Perforated'
+    description: '3/8" Round, 1/2" Staggered Centres.'
+  - 
+    image: '/gallery/perfpatterns/1-2_11-16_StagCentres.png'
+    title: 'Round Perforated'
+    description: '1/2" Round, 11/16" Staggered Centres.'
+  -
+    image: '/gallery/perfpatterns/Square.png'
+    title: 'Square Perforated'
+    description: 'Only in 22ga cold rolled, 1/2" Square, 11/16" Straight Line Centres.'
+  -
+    image: '/gallery/perfpatterns/Windsor.png'
+    title: 'Windsor Perforated'
+    description: 'Only in 22ga cold rolled, Windsor.'
+  -
+    image: '/gallery/perfpatterns/Grecian.png'
+    title: 'Grecian Perforated'
+    description: 'Only in 22ga Cold rolled, Grecian.'
+  -
+    image: '/gallery/perfpatterns/Slotted.png'
+    title: 'Slotted Perforated'
+    description: 'Only in 22ga Cold rolled, Slotted.'
+---
+Download the full pdf, <a title="Perf Patterns PDF" href="/other/Perforated Patterns.pdf" rel="external"> Perforated metal (click for styles) </a>

@@ -29,7 +29,7 @@ Duct </br>
 Expanded metal </br>
 Flat bar </br>
 Mesh </br>
-<a title="Perf Patterns PDF" href="/other/Perforated Patterns.pdf" rel="external"> Perforated metal (click for styles) </a></br>
+<a title="Perf Patterns PDF" href="/other/Perforated Patterns.pdf" rel="external"> Perforated metal (click for styles) </a><br>
 Pipe </br>
 Plate </br>
 </div>

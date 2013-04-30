@@ -25,7 +25,8 @@ body
 	font-size: 14px;
 	color: #000;
 	padding: 0 0 20px 0;
-	background: #FFF url("../images/bg.png") repeat;
+	background: #FFF; 
+	/** url("../images/bg.png") repeat;**//
 }
 
 ::selection { background: #000; color: #FFF; }
@@ -195,20 +196,26 @@ a:hover { color: #222; }
 				{
 					float: left;
 					line-height: 40px;
-					padding: 0 13px;
+					padding: 0 15px;
 					font-weight: 400;
 					font-size: 14px;
 					text-decoration: none;
-					color: #888;
+					color: #FFF;
 					text-transform: uppercase;
 					letter-spacing: -0.3px;
 					font-family: "Orienta", Arial, Helvetica, sans-serif;
+					border-bottom: solid;
+					border-color:#243A74;
+					border-width: 1px;
 				}
 
 				
-					.container #menucont ul li a:hover, .container #menucont ul li.active a
+					.container #menucont ul li a span:hover, .container #menucont ul li.active a span
 					{
 						color: #FFF;
+						border-bottom: solid;
+						border-color:#FFF;
+						border-width: 1px;
 					}
 					
 	/** Main **/
