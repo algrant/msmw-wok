@@ -17,12 +17,22 @@
 {%- endblock %}
 
 {%- block sidebar -%}
+
+
 <h3>Gallery</h3>
-<div class = "gallery-link">
-    <a title="" href="/gallery/countertops"><img src = "/gallery/countertops/counter-thumb.jpg" title="Countertops" alt="Link to counter top gallery"></a>
-    <label><a title="Countertops" href="/gallery/countertops"> Countertops </a></label>
+<div id="random-gallery" class = "gallery-link">
+
 </div>
 
+<script>
+
+  h = [
+  {%- for gallery in site.tags['_gal']|sort(attribute='gal_sort') %}
+          '<a title="" href="/{{ gallery.url }}"><img src = "{{gallery.gal_primary}}" title=""></img></a> <label><a title="" href="/{{ gallery.url }}"> {{ gallery.title }} </a></label> ' ,
+  {%- endfor -%}  ];
+  
+  document.getElementById("random-gallery").innerHTML = h[Math.floor(Math.random()*h.length)];
+</script>
 
 {%- endblock -%}
 
