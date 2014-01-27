@@ -18,8 +18,11 @@
 
 {%- block sidebar -%}
 
-
+<span id="time"> what time is it! </span>
+<p id="are_we_open"> We are open </p>
+<p id="holidays"> Next Holiday is... </p>
 <h3>Gallery</h3>
+
 <div id="random-gallery" class = "gallery-link">
 
 </div>
@@ -32,6 +35,34 @@
   {%- endfor -%}  ];
   
   document.getElementById("random-gallery").innerHTML = h[Math.floor(Math.random()*h.length)];
+  var datetime = null,
+        date = null;
+  var update = function () {
+      date = moment().tz("America/Vancouver");
+      datetime.innerHTML = "Vancouver Time: <br> " + date.format('MMMM Do h:mm a');
+  };
+  datetime = document.getElementById("time");
+  update();
+  setInterval(update, 1000);
+
+
+  var offset = -8;
+  var vancouverDate = new Date(new Date( new Date().getTime() + offset * 3600 * 1000).toUTCString().replace( / GMT$/, "" ));
+
+  var holidayElement = document.getElementById("holidays");
+  var nexthol = NextHoliday(vancouverDate);
+  holidayElement.innerHTML = "Next Holiday: " + nexthol.pre_tag;
+  var openElement = document.getElementById("are_we_open");
+  var areWe = areWeOpen(vancouverDate);
+  if(areWe[0] ){
+      openElement.innerHTML = areWe[1];
+      openElement.classList.remove("closed");
+      openElement.classList.add("open");
+  }else{
+      openElement.innerHTML = areWe[1];
+      openElement.classList.remove("open");
+      openElement.classList.add("closed");
+  }
 </script>
 
 {%- endblock -%}
