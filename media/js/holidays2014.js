@@ -1,65 +1,67 @@
-var SHOP_HOLIDAYS_2015 = [
+var SHOP_HOLIDAYS_2014 = [
 	{
 		title: "Family Day",
-		date:"February 9, 2015",
+		date:"February 10, 2014",
 		open: false,
-		pre_tag: "We'll be closed for Family Day, Mon Feb 9.",
+		pre_tag: "We'll be closed for Family Day, Mon Feb 10.",
 		tag: "Closed for Family Day! Regular hours resume tomorrow."
 	},{
 		title: "Good Friday",
-		date:"April 3, 2015",
+		date:"April 18, 2014",
 		open: false,
-		pre_tag: "We'll be closed for Good Friday, April 3.",
+		pre_tag: "We'll be closed for Good Friday, April 18.",
 		tag: "Closed for Good Friday!"
 	},{
 		title: "Easter Monday",
-		date:"April 6, 2015",
+		date:"April 21, 2014",
 		open: false,
-		pre_tag: "We'll be closed for Easter Monday, April 6.",
+		pre_tag: "We'll be closed for Easter Monday, April 21.",
 		tag: "Closed for Easter Monday! Regular hours resume tomorrow."
 	},{
 		title: "Victoria Day",
-		date:"May 18, 2015",
+		date:"May 19, 2014",
 		open: false,
-		pre_tag: "We'll be closed for Victoria Day, Mon May 18.",
+		pre_tag: "We'll be closed for Victoria Day, Mon May 19.",
 		tag: "Closed for Victoria Day! Regular hours resume tomorrow."
 	},{
 		title: "Canada Day",
-		date:"July 1, 2015",
+		date_start: "June 30, 2014",
+		date_end:"July 1, 2014",
 		open: false,
-		pre_tag: "We'll be closed for Canada Day, Wed July 1.",
-		tag: "Closed for Canada Day! Regular hours resume tomorrow."
+		pre_tag: "We'll be closed for Canada Day, Monday June 30 and Tuesday July 1.",
+		tag: "Closed for Canada Day! Regular hours resume on Wednesday."
 	},{
 		title: "British Columbia Day",
-		date:"August 3, 2015",
+		date:"August 4, 2014",
 		open: false,
-		pre_tag: "We'll be closed for BC Day, Mon Aug 3.",
+		pre_tag: "We'll be closed for BC Day, Monday Aug 4.",
 		tag: "Closed for BC Day! Regular hours resume tomorrow."
 	},{
 		title: "Labour Day",
-		date:"September 7, 2015",
+		date:"September 1, 2014",
 		open: false,
-		pre_tag: "We'll be closed for Labour Day, Mon Sep 7.",
+		pre_tag: "We'll be closed for Labour Day, Mon Sep 1.",
 		tag: "Closed for Labour Day! Regular hours resume tomorrow."
 	},{
 		title: "Thanksgiving Day",
-		date:"October 12, 2015",
+		date:"October 13, 2014",
 		open: false,
-		pre_tag: "We'll be closed for Thanksgiving Day, Mon Oct 12.",
+		pre_tag: "We'll be closed for Thanksgiving Day, Mon Oct 13.",
 		tag: "Closed for Thanksgiving Day! Regular hours resume tomorrow."
 	},{
 		title: "Remembrance Day",
-		date:"Nov 11, 2015",
+		date_start:"November 10, 2014",
+		date_end:"November 11, 2014",
 		open: false,
-		pre_tag: "We'll be closed for Remembrance Day, Wed Nov 11.",
-		tag: "Closed for Remembrance Day. Regular hours resume tomorrow."
+		pre_tag: "We'll be closed for Remembrance Day weekend, Mon and Tue, Nov 10 and 11.",
+		tag: "We are closed for Remembrance Day weekend. Regular hours resume Wed Nov 12."
 	},{
 		title: "Christmas Break",
-		date_start: "Decemeber 19, 2014",
-		date_end: "January 4, 2015",
+		date_start: "Decemeber 20, 2014",
+		date_end: "January 5, 2015",
 		open: false,
-		pre_tag:"We'll be closed for the holidays, Dec 19 - Jan 4.",
-		tag: "Closed for the holidays. Regular hours resume Tue Jan 5."
+		pre_tag:"We'll be closed for the holidays, Dec 20 - Jan 5.",
+		tag: "Closed for the holidays. Regular hours resume Tue Jan 6."
 	}
 ]
 
@@ -71,20 +73,20 @@ function NextHoliday(today){
 	while (test_next_date){
 		i++;
 		
-		if (SHOP_HOLIDAYS_2015[i].hasOwnProperty("date")){
-			if (new Date(SHOP_HOLIDAYS_2015[i].date.concat(" 23:59:59")) > today){
+		if (SHOP_HOLIDAYS_2014[i].hasOwnProperty("date")){
+			if (new Date(SHOP_HOLIDAYS_2014[i].date.concat(" 23:59:59")) > today){
 				test_next_date = false;
 			}
 		}else{
-			if (new Date(SHOP_HOLIDAYS_2015[i].date_end.concat(" 23:59:59")) > today){
+			if (new Date(SHOP_HOLIDAYS_2014[i].date_end.concat(" 23:59:59")) > today){
 				test_next_date = false;
 			}
 		}
-		if(i == SHOP_HOLIDAYS_2015.length-1){
+		if(i == SHOP_HOLIDAYS_2014.length-1){
 			test_next_date = false;
 		}
 	}
-	return SHOP_HOLIDAYS_2015[i]
+	return SHOP_HOLIDAYS_2014[i]
 }
 
 function areWeOpen(someDate) {
@@ -105,24 +107,24 @@ function areWeOpen(someDate) {
 		while(test_next_date){
 			i++;
 
-			if (SHOP_HOLIDAYS_2015[i].hasOwnProperty("date")){
-				var holistart = new Date(SHOP_HOLIDAYS_2015[i].date.concat(" 00:00:01"))
-				var holiend = new Date(SHOP_HOLIDAYS_2015[i].date.concat(" 23:59:59"));
+			if (SHOP_HOLIDAYS_2014[i].hasOwnProperty("date")){
+				var holistart = new Date(SHOP_HOLIDAYS_2014[i].date.concat(" 00:00:01"))
+				var holiend = new Date(SHOP_HOLIDAYS_2014[i].date.concat(" 23:59:59"));
 				if (holistart < someDate && someDate < holiend){
 					test_next_date = false;
 					areWeOpen = false;
-					message = SHOP_HOLIDAYS_2015[i].tag;
+					message = SHOP_HOLIDAYS_2014[i].tag;
 				}
 			}else{
-				var holistart = new Date(SHOP_HOLIDAYS_2015[i].date_start.concat(" 00:00:00"))
-				var holiend = new Date(SHOP_HOLIDAYS_2015[i].date_end.concat(" 23:59:59"));
+				var holistart = new Date(SHOP_HOLIDAYS_2014[i].date_start.concat(" 00:00:00"))
+				var holiend = new Date(SHOP_HOLIDAYS_2014[i].date_end.concat(" 23:59:59"));
 				if (holistart < someDate && someDate < holiend){
 					test_next_date = false;
 					areWeOpen = false;
-					message = SHOP_HOLIDAYS_2015[i].tag;
+					message = SHOP_HOLIDAYS_2014[i].tag;
 				}
 			}
-			if(i == SHOP_HOLIDAYS_2015.length-1){
+			if(i == SHOP_HOLIDAYS_2014.length-1){
 				test_next_date = false;
 			}
 		}

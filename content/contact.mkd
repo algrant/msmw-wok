@@ -24,36 +24,10 @@ Contact us by email any time, and we'll get back to you within a few business da
 
 ##Hours##
 
-<table id="hours-table">
-<tr>  <td> Monday: </td> <td> 7:30am - 3:30pm </td> </tr>
-<tr>  <td> Tuesday: </td> <td> 7:30am - 3:30pm </td> </tr>
-<tr>  <td> Wednesday: </td> <td> 7:30am - 3:30pm </td> </tr>
-<tr>  <td> Thursday: </td> <td> 7:30am - 3:30pm </td> </tr>
-<tr>  <td> Friday: </td> <td> 7:30am - 3:30pm </td> </tr>
-<tr>  <td> Saturday: </td> <td> Closed </td> </tr>
-<tr>  <td> Sunday: </td> <td> Closed </td> </tr>
-</table>
+We are closed for business. No open hours!
 
  <br>
 
-##Holidays##
-
-<table id="holidays-table">
-
-</table>
-
-<script type="text/javascript">
- holi_table = document.getElementById("holidays-table")
- new_html = "";
- for ( i = 0; i < SHOP_HOLIDAYS_2014.length; i++){
-  hol = SHOP_HOLIDAYS_2014[i];
-  new_html += "<tr>  <td>"+ hol.title +": </td> <td>" + (hol.date?hol.date:hol.date_start + " -  <br>" + hol.date_end) + "</td> </tr>"
- }
-  holi_table.innerHTML = new_html;
-  console.log(new_html);
-  // <tr>  <td> Monday: </td> <td> 7:30am - 3:30pm </td> </tr>
-
-</script>
 
 
  <br>
